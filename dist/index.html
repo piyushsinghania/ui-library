@@ -1,12 +1,51 @@
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title></title>
-</head>
-<body>
-
-  <script src="assets/bundle.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>UI Library</title>
+    <style>
+      body {
+        font-size: 1.5rem;
+      }
+      .container {
+        margin: 40px;
+        margin-top: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Tooltip -->
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+        assumenda laboriosam expedita
+        <span class="tooltip" data-message="I'm a tooltip">mostrel</span>
+        necessitatibus hic voluptatibus at perferendis, perspiciatis fuga!
+      </p>
+      <!-- Accordion -->
+      <h2>Services</h2>
+      <div class="accordion">
+        <div class="trigger">Awesome T-Shirt Designs</div>
+        <div class="content">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus
+            quasi adipisci reiciendis iure quo quos labore corrupti modi sunt
+            eveniet!
+          </p>
+        </div>
+      </div>
+      <div class="accordion">
+        <div class="trigger">Cool Merchandise</div>
+        <div class="content">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus
+            quasi adipisci reiciendis iure quo quos labore corrupti modi sunt
+            eveniet!
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="assets/bundle.js"></script>
+  </body>
 </html>

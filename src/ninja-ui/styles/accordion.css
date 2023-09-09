@@ -1,0 +1,29 @@
+.accordion .trigger {
+  position: relative;
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion .trigger::after {
+  content: '>';
+  position: absolute;
+  display: inline-block;
+  right: 15px;
+  font-weight: bold;
+  transition: transform 0.3s;
+  transform: rotate(90deg) scale(0.5, 1);
+}
+
+.accordion .trigger.active::after {
+  transform: rotate(-90deg) scale(0.5, 1);
+}
+
+.content {
+  padding: 10px;
+  display: none;
+}
+
+.content.active {
+  display: block;
+}
